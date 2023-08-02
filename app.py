@@ -4,5 +4,5 @@ app =   Flask(__name__)
 def home():
     return render_template(r"index.html")
 if __name__ == "__main__":
-    app.run(debug=False,    port=8000)
+    app.run(debug=False, host=('0.0.0.0'))
     
